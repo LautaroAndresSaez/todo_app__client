@@ -1,0 +1,8 @@
+@mixin formPage {
+    background-color: $light-background;
+    width: 30vw;
+    padding: 3rem;
+    border-radius: 0.3rem;
+    box-shadow: -5px 0px 15px $dark;
+    margin: auto;
+}

@@ -1,0 +1,13 @@
+@import "../main";
+
+.log-in {
+    @include formPage;
+    &__create-account {
+        margin-top: .3rem;
+        float: right;
+        a {
+            color: $primary;
+            text-decoration: none;
+        }
+    }
+}

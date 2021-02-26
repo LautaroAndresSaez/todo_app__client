@@ -1,0 +1,18 @@
+@import "../main";
+
+.add-task {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    &__icon{
+        color: $primary;
+    }
+
+    &__name {
+        outline: none;
+        border: 0;
+        font-size: 1rem;
+    }
+}

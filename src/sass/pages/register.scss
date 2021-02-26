@@ -1,0 +1,13 @@
+@import "../main";
+
+.register {
+    @include formPage;
+    &__log-in {
+        margin-top: 0.3rem;
+        float: right;
+        a {
+            color: $primary;
+            text-decoration: none;
+        }
+    }
+}

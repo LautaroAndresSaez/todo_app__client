@@ -1,0 +1,23 @@
+@import "main";
+
+html, body{
+    min-height: 100vh;
+}
+
+body {
+    background: linear-gradient(to right, $primary, $primary-light);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+input{
+    outline: none;
+}
+
+.title {
+    color: $primary;
+    text-align: center;
+    font-size: 3rem;
+}

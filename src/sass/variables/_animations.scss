@@ -1,0 +1,20 @@
+@keyframes task-in{
+    0%{
+        opacity: 0;
+    }
+}
+
+@keyframes loading{
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes low-in {
+    0%{
+        transform: translateY(-100%);
+    }
+    100%{
+        transform: translateY(-10%);
+    }
+}

@@ -1,0 +1,87 @@
+@import "../main";
+
+.tasks {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    &__element {
+        text-decoration: none;
+        list-style: none;
+        border-bottom: 1px solid $dark;
+        width: 80%;
+        transition: all 150ms linear;
+
+        &:hover {
+            background-color: $gray;
+        }
+    }
+
+    &__title{
+        width: 80%;
+        text-decoration: none;
+        list-style: none;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    
+}
+
+
+.task {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+    animation-name: task-in;
+    animation-duration: 1s;
+    &__checkbox {
+        border-radius: 50%;
+        height: 30px;
+        width: 30px;
+        border: none;
+        background-color: $light;
+        border: 0.1rem solid $primary;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        svg {
+            color: $light;
+            transition: color 200ms ease-in;
+        }
+        
+        &--success {
+            border-color: none;
+            background-color: $primary;
+        }
+
+        &:hover {
+            cursor: pointer;
+            svg {
+                color: $primary;
+            }
+        }
+    }
+
+    &__name {
+        flex: 1;
+        margin-left: 1rem;
+    }
+
+    &__delete{
+        background-color: transparent;
+        border: none;
+        margin-right: .3rem;
+        float: right;
+        color: $danger;
+        &:hover{
+            cursor: pointer;
+        }
+    }
+}
